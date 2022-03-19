@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; Sleepless Valheim</title>
+	<atom:link href="https://sleeplessvalheim.github.io/0/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sleeplessvalheim.github.io/0</link>
+	<description>This is the place to share our day to day journey in the world of Valheim!</description>
+	<lastBuildDate>Sat, 19 Mar 2022 01:52:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.2</generator>
+
+<image>
+	<url>https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/site_logo-150x150.png</url>
+	<title>Uncategorized &#8211; Sleepless Valheim</title>
+	<link>https://sleeplessvalheim.github.io/0</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Found a sign board</title>
+		<link>https://sleeplessvalheim.github.io/0/2022/03/18/found-a-sign-board/</link>
+		
+		<dc:creator><![CDATA[bryan]]></dc:creator>
+		<pubDate>Fri, 18 Mar 2022 01:49:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://sleeplessvalheim.github.io/0/?p=159</guid>
+
+					<description><![CDATA[found a weird looking sign board, after check online say it increase comfort level building base around it. I make bed and camp fire testing it out, it showing comfort level level 4. planting carrot in old base.]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img width="1024" height="718" src="https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-1024x718.jpg" alt="" class="wp-image-157" srcset="https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-1024x718.jpg 1024w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-300x210.jpg 300w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-768x539.jpg 768w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-850x596.jpg 850w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18.jpg 1496w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="718" src="https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-2-1024x718.jpg" alt="" class="wp-image-155" srcset="https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-2-1024x718.jpg 1024w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-2-300x210.jpg 300w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-2-768x538.jpg 768w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-2-850x596.jpg 850w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-2.jpg 1495w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>found a weird looking sign board, after check online say it increase comfort level building base around it. I make bed and camp fire testing it out, it showing comfort level level 4.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="720" src="https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-3-1024x720.jpg" alt="" class="wp-image-156" srcset="https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-3-1024x720.jpg 1024w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-3-300x211.jpg 300w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-3-768x540.jpg 768w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-3-850x598.jpg 850w, https://sleeplessvalheim.github.io/0/wp-content/uploads/2022/03/2022-03-18-3.jpg 1493w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>planting carrot in old base.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
