@@ -39,6 +39,17 @@ wp-config.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
+/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/css/
+/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/font/
+/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/js/
+/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/ccpw-icon.png
+/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/chart-loading.svg
+/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/crypto-widget.png
+/wp-content/plugins/cryptocurrency-price-ticker-widget/admin/
+/wp-content/plugins/cryptocurrency-price-ticker-widget/includes/
+/wp-content/plugins/cryptocurrency-price-ticker-widget/languages/
+/wp-content/plugins/cryptocurrency-price-ticker-widget/cryptocurrency-price-ticker-widget.php
+/wp-content/plugins/cryptocurrency-price-ticker-widget/readme.txt
 /wp-content/plugins/ga-google-analytics
 /wp-content/plugins/simply-static
 /wp-content/plugins/wp-rss-aggregator
