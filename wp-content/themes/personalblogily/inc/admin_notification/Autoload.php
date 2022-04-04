@@ -1,5 +1,8 @@
 <?php
 
+/*
+
+*/
 
 if (!class_exists("SpbThemesAdminNotices")) {
     include(__DIR__.'/Loader.php');

@@ -73,6 +73,8 @@ class Notice
         'capability'    => 'edit_theme_options',
         'option_prefix' => 'wptrt_notice_dismissed',
         'screens'       => [],
+        'delay'         => '+1 days',
+        'wpautop'       => true
     ];
 
     /**
@@ -85,31 +87,40 @@ class Notice
     private $allowed_html = [
         'p'      => [
             'class' => [],
-            'style' => [],
+        ],
+        'h2'      => [
+            'class' => [],
+        ],
+        'ul'      => [
+            'class' => [],
+        ],
+        'li'      => [
+            'class' => [],
         ],
         'span' => [
             'class' => [],
-            'style' => [],
-        ],
-        'div' => [
-            'class' => [],
-            'style' => [],
         ],
         'a'      => [
             'class' => [],
             'href' => [],
             'rel'  => [],
             'target' => [],
-            'style' => [],
         ],
         'em'     => [
             'class' => [],
-            'style' => [],
         ],
         'strong' => [
             'class' => [],
         ],
+        'img' => [
+            'class' => [],
+            'alt' => [],
+            'src' => [],
+            'width' => [],
+            'height' => [],
+        ],
         'br'     => [],
+        'style' => [],
     ];
 
     /**
@@ -174,7 +185,7 @@ class Notice
         $this->allowed_html = apply_filters('wptrt_admin_notices_allowed_html', $this->allowed_html);
 
         // Instantiate the Dismiss object.
-        $this->dismiss = new Dismiss($this->id, $this->options['option_prefix'], $this->options['scope']);
+        $this->dismiss = new Dismiss($this->id, $this->options['option_prefix'], $this->options['scope'], $this->options['delay']);
     }
 
     /**
@@ -296,7 +307,11 @@ class Notice
      */
     public function get_message()
     {
-        return wpautop(wp_kses($this->message, $this->allowed_html));
+        if($this->options['wpautop']){
+            return wpautop(wp_kses($this->message, $this->allowed_html));
+        }
+
+        return wp_kses($this->message, $this->allowed_html);
     }
 
     /**

@@ -55,14 +55,14 @@ class Dismiss
      * @param string $prefix The prefix that will be used for the option/user-meta.
      * @param string $scope  Controls where the dismissal will be saved: user or global.
      */
-    public function __construct($id, $prefix, $scope = 'global')
+    public function __construct($id, $prefix, $scope = 'global', $delay = '+1 days')
     {
 
         // Set the object properties.
         $this->id     = sanitize_key($id);
         $this->prefix = sanitize_key($prefix);
         $this->scope  = (in_array($scope, [ 'global', 'user' ], true)) ? $scope : 'global';
-        $this->delay_notice();
+        $this->delay_notice($delay);
         // Handle AJAX requests to dismiss the notice.
         add_action('wp_ajax_wptrt_dismiss_notice', [ $this, 'ajax_maybe_dismiss_notice' ]);
     }
@@ -176,7 +176,7 @@ class Dismiss
         update_option("{$this->prefix}_{$this->id}", true, false);
     }
 
-    private function delay_notice()
+    private function delay_notice($delay)
     {
         if ('user' === $this->scope) {
             $delay_time = (get_user_meta(get_current_user_id(), "{$this->prefix}_{$this->id}_delay", true));
@@ -187,9 +187,9 @@ class Dismiss
             return;
         }
         if ('user' === $this->scope) {
-            update_user_meta(get_current_user_id(), "{$this->prefix}_{$this->id}_delay", strtotime("+1 days", time()));
+            update_user_meta(get_current_user_id(), "{$this->prefix}_{$this->id}_delay", strtotime($delay, time()));
             return;
         }
-        update_option("{$this->prefix}_{$this->id}_delay", strtotime("+1 days", time()), false);
+        update_option("{$this->prefix}_{$this->id}_delay", strtotime($delay, time()), false);
     }
 }

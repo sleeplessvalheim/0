@@ -635,7 +635,7 @@ function personalblogily_register_required_plugins() {
 }
 
 
-add_action('admin_init', 'personalblogily_spbThemesNotification');
+add_action('admin_init', 'personalblogily_spbThemesNotification', 8);
 
 function personalblogily_spbThemesNotification(){
 	$notifications = include('inc/admin_notification/Autoload.php');
@@ -649,5 +649,44 @@ function personalblogily_spbThemesNotification(){
 		</div>
 
 		", "info");
-	$notifications->Boot();
+	
+
+  $options_notification_start = array("delay"=> "-1 seconds", "wpautop" => false);
+  $notifications->Add("personalblogily_notification_start", "Let's get you started with Personal Blogily!", '
+    <span class="st-notification-wrapper">
+    <span class="st-notification-column-wrapper">
+      <span class="st-notification-column">
+        <img src="'. esc_url( get_template_directory_uri() . '/inc/admin_notification/src/preview.png' ).'" width="150" height="177" />
+      </span>
+
+      <span class="st-notification-column">
+        <h2>Why Personal Blogily</h2>
+        <ul class="st-notification-column-list">
+        <li>Easy to Use & Customize</li>
+        <li>Search Engine Optimized</li>
+        <li>Lightweight and Fast</li>
+        <li>Top-notch Customer Support</li>
+        </ul>
+        <a href="https://superbthemes.com/demo/personalblogily/" target="_blank" class="button">View Personal Blogily Demo <span aria-hidden="true" class="dashicons dashicons-external"></span></a> 
+
+      </span>
+        <span class="st-notification-column">
+        <h2>Customize Personal Blogily</h2>
+        <ul>
+          <li><a href="'. esc_url( admin_url( 'customize.php' ) ) .'" class="button button-primary">Customize The Design</a></li>
+          <li><a href="'. esc_url( admin_url( 'widgets.php' ) ) .'" class="button button-primary">Add/Edit Widgets</a></li>
+          <li><a href="https://superbthemes.com/customer-support/" target="_blank" class="button">Contact Support <span aria-hidden="true" class="dashicons dashicons-external"></span></a> </li>
+        </ul>
+      </span>
+      </span>
+      <span class="st-notification-footer">
+        Personal Blogily is created by SuperbThemes. We have 100.000+ users and are rated <strong>Excellent</strong> on Trustpilot <img src="'. esc_url( get_template_directory_uri() . '/inc/admin_notification/src/stars.svg' ).'" width="87" height="16" />
+      </span>
+    </span>
+
+<style>.st-notification-column-wrapper{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;border-top:1px solid #eee;padding-top:20px;margin-top:3px}.st-notification-column-wrapper h2{margin:0}.st-notification-footer img{margin-bottom:-3px;margin-left:5px}.st-notification-column-wrapper .button{min-width:180px;text-align:center;margin-top:10px}.st-notification-column{margin-right:10px;padding:0 10px;max-width:250px;width:100%}.st-notification-column img{border:1px solid #eee}.st-notification-footer{display:inline-block;width:100%;padding:15px 0;border-top:1px solid #eee;margin-top:10px}.st-notification-column:first-of-type{padding-left:0;max-width:160px}.st-notification-column-list li{list-style-type:circle;margin-left:15px;font-size:14px}@media only screen and (max-width:1000px){.st-notification-column{max-width:33%}}@media only screen and (max-width:800px){.st-notification-column{max-width:50%}.st-notification-column:first-of-type{display:none}}@media only screen and (max-width:600px){.st-notification-column-wrapper{display:block}.st-notification-column{width:100%;max-width:100%;display:inline-block;padding:0;margin:0}span.st-notification-column:last-of-type{margin-top:30px}}</style>
+
+    ', "info", $options_notification_start);
+  $notifications->Boot();
 }
+
